@@ -1,0 +1,111 @@
+C Exercises – Basic to Advanced
+Beginner – Warm-Up (Basics, Variables, Pointers)
+
+You’ve got int, printf, pointers like &—let’s test the foundation.
+
+    ///Swap Two Numbers
+        Task: Write a program to swap two ints (a = 5, b = 10) using pointers—no temp variable trick yet, just basics.
+        Hint: Use int *p1 = &a; int *p2 = &b;.
+        Output: Before: a=5, b=10 | After: a=10, b=5
+
+    ///---- 01
+
+
+    ///Print Your Name 5 Times
+        Task: Use a for loop to print your name (e.g., “Ranjika”) 5 times, numbered (1. Ranjika, 2. Ranjika…).
+        Hint: for (int i = 1; i <= 5; i++).
+        Output: 1. Ranjika\n2. Ranjika\n…
+
+    ///---- 02
+
+
+   /// Odd or Even Checker
+        Task: Input a number, print if it’s odd or even—use if-else.
+        Hint: % 2 == 0 for even.
+        Output: Enter number: 7 | 7 is odd
+    /// -----03 
+
+Intermediate – Loops, Arrays, Functions
+
+
+    ///Reverse an Array
+        Task: Take an array (int arr[] = {1, 2, 3, 4, 5}), reverse it in place—use a loop.
+        Hint: Swap arr[0] with arr[4], arr[1] with arr[3], etc.
+        Output: Original: 1 2 3 4 5 | Reversed: 5 4 3 2 1
+    ///----04
+
+
+    ///Factorial Function
+        Task: Write a function int factorial(int n)—calculate factorial (5! = 5 * 4 * 3 * 2 * 1). Call it in main().
+        Hint: Use a for loop or recursion (your call).
+        Output: Factorial of 5 is 120
+    ///---05
+
+
+   /// String Length Without strlen
+        Task: Input a string (e.g., “Ranjika”), count its length manually—no string.h.
+        Hint: Loop ‘til \0 (null terminator).
+        Output: Enter string: Ranjika | Length: 7
+    ///---06
+Advanced – Pointers, Structs, Memory
+
+
+    ///Dynamic Array Sum
+        Task: Use malloc to make an array—user picks size, inputs numbers, print their sum. Free it after.
+        Hint: int *arr = (int*)malloc(size * sizeof(int));.
+        Output: Size: 3 | Enter: 1 2 3 | Sum: 
+    ///----07 
+
+    ///Pointer to Pointer Swap
+        Task: Swap two ints (a = 5, b = 10) using a function void swap(int **p1, int **p2). Pass pointers-to-pointers.
+        Hint: int *pa = &a; int **ppa = &pa;.
+        Output: Before: a=5, b=10 | After: a=10, b=5
+    ///----08
+
+
+    ///Bubble Sort
+        Task: Hardcode an array (int arr[] = {5, 2, 8, 1, 9}), sort it ascending with bubble sort—print before/after.
+        Hint: Nested loops—compare arr[j] and arr[j+1], swap if out of order.
+        Output: Before: 5 2 8 1 9 | After: 1 2 5 8 9
+   ///----09
+   /// Palindrome Checker
+        Task: Input a string (e.g., “racecar”), check if it’s a palindrome—same forward and backward.
+        Hint: Two pointers—start vs. end—or reverse and compare.
+        Output: Enter: racecar | Palindrome: Yes | Enter: hello | Palindrome: No
+   ///--10
+    //Fibonacci Sequence
+        Task: Input n (e.g., 6), print first n Fibonacci numbers (0, 1, 1, 2, 3, 5).
+        Hint: Loop with prev, curr, next = prev + curr.
+        Output: Enter: 6 | Fibonacci: 0 1 1 2 3 5
+   ///---11
+
+        
+
+
+    Dynamic Matrix Sum
+        Task: Use malloc—user picks rows and cols (e.g., 2x3), inputs numbers, sums all elements. Free it.
+        Hint: int **matrix = (int**)malloc(rows * sizeof(int*));—then each row.
+        Output: Rows: 2, Cols: 3 | Enter: 1 2 3 4 5 6 | Sum: 21
+    File Reader
+        Task: Write “Bro 2005” to a file (data.txt), read it back, print it.
+        Hint: FILE *f = fopen("data.txt", "w");—then fopen("r"), fgets.
+        Output: Wrote: Bro 2005 | Read: Bro 2005
+    Circular Linked List
+        Task: Define struct Node { int data; struct Node* next; };. Make 3 nodes (1 -> 2 -> 3 -> 1), print ‘em in a loop.
+        Hint: Last node’s next points to first—while ‘til you hit start again.
+        Output: 1 -> 2 -> 3 -> (loops)
+
+Beast Mode – Mini Projects
+
+    2005 Music Player
+        Task: Struct Song { char* title; int year; };. Hardcode 3 (e.g., “Nick Tune”, 2005), “play” one by picking a year—print title.
+        Hint: Array of structs, loop to match year.
+        Output: Pick year: 2005 | Playing: Nick Tune
+    Binary Converter
+        Task: Input a decimal (e.g., 13), convert to binary (1101)—print it.
+        Hint: % 2 for bits, store in array, reverse.
+        Output: Enter: 13 | Binary: 1101
+
+
+  
+           
